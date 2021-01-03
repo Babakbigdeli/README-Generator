@@ -1,6 +1,7 @@
 // Declaring the dependencies and variables
 const inquirer = require('inquirer');
 const fs = require ('fs');
+const generateMarkdown = require("./utils/generateMarkdown");
 
 // User Prompts questions 
 const userPrompts = [
@@ -44,7 +45,7 @@ const userPrompts = [
   
     {
       type: "input",
-      message: "please enter git hub usernames of all the contributor (If there's more than one, seperate names with comma without spaces.)",
+      message: "Please enter git hub usernames of all the contributor (If there's more than one, seperate names with comma without spaces.)",
       name: "contributors",
     },
   
@@ -55,9 +56,16 @@ const userPrompts = [
     },
 
     {
+        type: "input",
+        message: "Provide provide your email address.",
+        name: "email",
+      },
+
+    {
     type: "list",
     message: "Choose a license for your project.",
-    choices: ['GNU AGPLv3', 'GNU GPLv3', 'GNU LGPLv3', 'Mozilla Public License 2.0', 'Apache License 2.0', 'MIT License', 'Boost Software License 1.0', 'The Unlicense'],
+    choices: ['MIT License', 'GNU AGPLv3', 'GNU GPLv3', 'GNU LGPLv3', 'Mozilla Public License 2.0', 'Apache License 2.0', 'Boost Software License 1.0', 'The Unlicense'],
     name: "license"
     },
-    ];
+ ];
+
