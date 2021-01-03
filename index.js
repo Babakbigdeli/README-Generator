@@ -69,3 +69,17 @@ const userPrompts = [
     },
  ];
 
+
+ function init() {
+    inquirer.prompt(userPrompts).then(userInput => {
+      console.log(userInput);
+          fs.writeFile("README.md", generateMarkdown(userInput), function(err) {
+            if (err) {
+              throw err;
+            }
+          });
+        });
+    };
+
+  
+  init();
