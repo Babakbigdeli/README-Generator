@@ -68,7 +68,7 @@ const userPrompts = [
     },
  ];
 
-
+// the callback function and write file function 
  function init() {
     inquirer.prompt(userPrompts).then(userInput => {
       console.log(userInput);
