@@ -15,7 +15,6 @@ const userPrompts = [
       type: "input",
       message: "What is your Project Title?",
       name: "title",
-      default: "Generate a ReadMe.md file "
     },
   
     {
