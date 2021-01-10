@@ -17,7 +17,7 @@ ${data.desc}
 - [Test](#test)
 - [Questions](#questions)
 - [License](#license)
-- [Author] (#Author)
+- [Author](#Author)
 
 ## Installation
 ${data.install}

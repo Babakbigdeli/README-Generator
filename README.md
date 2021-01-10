@@ -17,7 +17,7 @@ Create a command-line application that dynamically generates a README.md from us
 - [Test](#test)
 - [Questions](#questions)
 - [License](#license)
-- [Author] (#Author)
+- [Author](#Author)
 
 ## Installation
 Step1: Run npm install and Step2: Run node index.js
