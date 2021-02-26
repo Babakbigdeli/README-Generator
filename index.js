@@ -56,7 +56,7 @@ const userPrompts = [
 
     {
         type: "input",
-        message: "Provide provide your email address.",
+        message: "Provide your email address.",
         name: "email",
       },
 
